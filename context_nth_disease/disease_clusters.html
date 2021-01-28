@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contextualised disease clusters</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+        <h2>Contextualised disease clusters</h2>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a aria-selected="true" role="tab" data-toggle="tab" aria-controls="caliber_110" id="caliber_110-tab" class="nav-link active"  href="#caliber_110">Hypertension</a></li>
+
+          <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_101" id="caliber_101-tab" class="nav-link"  href="#caliber_101">Heart failure</a></li>
+          <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_57" id="caliber_57-tab" class="nav-link" href="#caliber_57">Coronary heart disease</a></li>
+          <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_132" id="caliber_132-tab" class="nav-link" href="#caliber_132">Ischaemic stroke</a></li>
+          <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_156" id="caliber_156-tab" class="nav-link" href="#caliber_156">Myocardial Infarction</a></li>
+          <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_290" id="caliber_290-tab" class="nav-link" href="#caliber_290">Diabetes</a></li>
+        </ul>
+    
+        <div class="tab-content">
+          <label for="min_position">Disease count:&nbsp;</label><span id='min_position_value'></span><br>
+          <input type="range" id="min_position" min="1" max="10" value="1" step="1">
+          
+            <div id="caliber_110" class="tab-pane fade show active" role="tabpanel" aria-labelledby="caliber_110-tab">
+                <h3>Clusters on UMAP projections</h3>
+                <img src="./imgs/umapcaliber_110_1\.png" class="img-fluid" >
+                <h3>Proportion of patients per cluster</h3>
+                <img src="./imgs/pie_caliber_110_1\.png" class="img-fluid" >
+                <h3>Year of birth distribution per cluster</h3>
+                <img src="./imgs/yob_caliber_110_1\.png" class="img-fluid" >
+                <h3>Age of first event distribution per cluster</h3>
+                <img src="./imgs/age_caliber_110_1\.png" class="img-fluid" >
+                <h3>Top diseases per cluster</h3>
+                <img src="./imgs/top_diseases_caliber_110_1\.png" class="img-fluid" >
+                <h3>Top drugs per cluster</h3>
+                <img src="./imgs/top_drugs_caliber_110_1\.png" class="img-fluid" >
+                <h3>BP per cluster</h3>
+                <img src="./imgs/BP_caliber_110_1\.png" class="img-fluid" >
+                <h3>Survival analysis</h3>
+                <img src="./imgs/survival_caliber_110_1\.png" class="img-fluid" >
+                <h3>Emergency admissions per cluster</h3>
+                <img src="./imgs/emergency_hists_caliber_110_1\.png" class="img-fluid" >
+                <h3>Time to emergency admission after event</h3>
+                <img src="./imgs/emergency_curves_caliber_110_1\.png" class="img-fluid" >
+            </div>
+            <div id="caliber_101" class="tab-pane fade" role="tabpanel" aria-labelledby="caliber_101-tab">
+              <h3>Clusters on UMAP projections</h3>
+              <img src="./imgs/umapcaliber_101_1\.png" class="img-fluid" >
+              <h3>Proportion of patients per cluster</h3>
+              <img src="./imgs/pie_caliber_101_1\.png" class="img-fluid" >
+              <h3>Year of birth distribution per cluster</h3>
+              <img src="./imgs/yob_caliber_101_1\.png" class="img-fluid" >
+              <h3>Age of first event distribution per cluster</h3>
+              <img src="./imgs/age_caliber_101_1\.png" class="img-fluid" >
+              <h3>Top diseases per cluster</h3>
+              <img src="./imgs/top_diseases_caliber_101_1\.png" class="img-fluid" >
+              <h3>Top drugs per cluster</h3>
+              <img src="./imgs/top_drugs_caliber_101_1\.png" class="img-fluid" >
+              <h3>BP per cluster</h3>
+              <img src="./imgs/BP_caliber_101_1\.png" class="img-fluid" >
+              <h3>Survival analysis</h3>
+              <img src="./imgs/survival_caliber_101_1\.png" class="img-fluid" >
+              <h3>Emergency admissions per cluster</h3>
+                <img src="./imgs/emergency_hists_caliber_101_1\.png" class="img-fluid" >
+                <h3>Time to emergency admission after event</h3>
+                <img src="./imgs/emergency_curves_caliber_101_1\.png" class="img-fluid" >
+            </div>
+            <div id="caliber_57" class="tab-pane fade" role="tabpanel" aria-labelledby="caliber_57-tab">
+              <h3>Clusters on UMAP projections</h3>
+              <img src="./imgs/umapcaliber_57_1\.png" class="img-fluid" >
+              <h3>Proportion of patients per cluster</h3>
+              <img src="./imgs/pie_caliber_57_1\.png" class="img-fluid" >
+              <h3>Year of birth distribution per cluster</h3>
+              <img src="./imgs/yob_caliber_57_1\.png" class="img-fluid" >
+              <h3>Age of first event distribution per cluster</h3>
+              <img src="./imgs/age_caliber_57_1\.png" class="img-fluid" >
+              <h3>Top diseases per cluster</h3>
+              <img src="./imgs/top_diseases_caliber_57_1\.png" class="img-fluid" >
+              <h3>Top drugs per cluster</h3>
+              <img src="./imgs/top_drugs_caliber_57_1\.png" class="img-fluid" >
+              <h3>BP per cluster</h3>
+              <img src="./imgs/BP_caliber_57_1\.png" class="img-fluid" >
+              <h3>Survival analysis</h3>
+              <img src="./imgs/survival_caliber_57_1\.png" class="img-fluid" >
+              <h3>Emergency admissions per cluster</h3>
+              <img src="./imgs/emergency_hists_caliber_57_1\.png" class="img-fluid" >
+              <h3>Time to emergency admission after event</h3>
+              <img src="./imgs/emergency_curves_caliber_57_1\.png" class="img-fluid" >
+            </div>
+            <div id="caliber_132" class="tab-pane fade" role="tabpanel" aria-labelledby="caliber_132-tab">
+              <h3>Clusters on UMAP projections</h3>
+              <img src="./imgs/umapcaliber_132_1\.png" class="img-fluid" >
+              <h3>Proportion of patients per cluster</h3>
+              <img src="./imgs/pie_caliber_132_1\.png" class="img-fluid" >
+              <h3>Year of birth distribution per cluster</h3>
+              <img src="./imgs/yob_caliber_132_1\.png" class="img-fluid" >
+              <h3>Age of first event distribution per cluster</h3>
+              <img src="./imgs/age_caliber_132_1\.png" class="img-fluid" >
+              <h3>Top diseases per cluster</h3>
+              <img src="./imgs/top_diseases_caliber_132_1\.png" class="img-fluid" >
+              <h3>Top drugs per cluster</h3>
+              <img src="./imgs/top_drugs_caliber_132_1\.png" class="img-fluid" >
+              <h3>BP per cluster</h3>
+              <img src="./imgs/BP_caliber_132_1\.png" class="img-fluid" >
+              <h3>Survival analysis</h3>
+              <img src="./imgs/survival_caliber_132_1\.png" class="img-fluid" >
+              <h3>Emergency admissions per cluster</h3>
+              <img src="./imgs/emergency_hists_caliber_132_1\.png" class="img-fluid" >
+              <h3>Time to emergency admission after event</h3>
+              <img src="./imgs/emergency_curves_caliber_132_1\.png" class="img-fluid" >
+            </div>
+            <div id="caliber_156" class="tab-pane fade" role="tabpanel" aria-labelledby="caliber_156-tab">
+              <h3>Clusters on UMAP projections</h3>
+              <img src="./imgs/umapcaliber_156_1\.png" class="img-fluid" >
+              <h3>Proportion of patients per cluster</h3>
+              <img src="./imgs/pie_caliber_156_1\.png" class="img-fluid" >
+              <h3>Year of birth distribution per cluster</h3>
+              <img src="./imgs/yob_caliber_156_1\.png" class="img-fluid" >
+              <h3>Age of first event distribution per cluster</h3>
+              <img src="./imgs/age_caliber_156_1\.png" class="img-fluid" >
+              <h3>Top diseases per cluster</h3>
+              <img src="./imgs/top_diseases_caliber_156_1\.png" class="img-fluid" >
+              <h3>Top drugs per cluster</h3>
+              <img src="./imgs/top_drugs_caliber_156_1\.png" class="img-fluid" >
+              <h3>BP per cluster</h3>
+              <img src="./imgs/BP_caliber_156_1\.png" class="img-fluid" >
+              <h3>Survival analysis</h3>
+              <img src="./imgs/survival_caliber_156_1\.png" class="img-fluid" >
+              <h3>Emergency admissions per cluster</h3>
+              <img src="./imgs/emergency_hists_caliber_156_1\.png" class="img-fluid" >
+              <h3>Time to emergency admission after event</h3>
+              <img src="./imgs/emergency_curves_caliber_156_1\.png" class="img-fluid" >
+            </div>
+            <div id="caliber_290" class="tab-pane fade" role="tabpanel" aria-labelledby="caliber_290-tab">
+              <h3>Clusters on UMAP projections</h3>
+              <img src="./imgs/umapcaliber_290_1\.png" class="img-fluid" >
+              <h3>Proportion of patients per cluster</h3>
+              <img src="./imgs/pie_caliber_290_1\.png" class="img-fluid" >
+              <h3>Year of birth distribution per cluster</h3>
+              <img src="./imgs/yob_caliber_290_1\.png" class="img-fluid" >
+              <h3>Age of first event distribution per cluster</h3>
+              <img src="./imgs/age_caliber_290_1\.png" class="img-fluid" >
+              <h3>Top diseases per cluster</h3>
+              <img src="./imgs/top_diseases_caliber_290_1\.png" class="img-fluid" >
+              <h3>Top drugs per cluster</h3>
+              <img src="./imgs/top_drugs_caliber_290_1\.png" class="img-fluid" >
+              <h3>BP per cluster</h3>
+              <img src="./imgs/BP_caliber_290_1\.png" class="img-fluid" >
+              <h3>Survival analysis</h3>
+              <img src="./imgs/survival_caliber_290_1\.png" class="img-fluid" >
+              <h3>Emergency admissions per cluster</h3>
+              <img src="./imgs/emergency_hists_caliber_290_1\.png" class="img-fluid" >
+              <h3>Time to emergency admission after event</h3>
+              <img src="./imgs/emergency_curves_caliber_290_1\.png" class="img-fluid" >
+            </div>
+        </div>
+    </div>
+
+    <!-- TODO: Here goes your content! -->
+
+
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      var slider = document.getElementById("min_position");
+      var span = document.getElementById("min_position_value");
+      span.innerHTML = slider.value; // Display the default slider value
+
+      // Update the current slider value (each time you drag the slider handle)
+      slider.oninput = function() {
+        span.innerHTML = slider.value;
+        var images=document.getElementsByTagName('img');
+        for(var i=0;i<images.length;i++){
+          images[i].src=images[i].src.split('_').slice(0, -1).join('_')+'_'+slider.value+'.png'
+        }        
+      }       
+    </script>
+  </body>
+</html>
