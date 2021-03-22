@@ -19,21 +19,22 @@
   </head>
   <body>
 
-    <div class="container">
-        <h2>Contextualised disease clusters</h2>
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a aria-selected="true" role="tab" data-toggle="tab" aria-controls="caliber_110" id="caliber_110-tab" class="nav-link active"  href="#caliber_110">Hypertension</a></li>
+   <div class="container">
+        <div style="position: fixed;z-index: 10;top:0;height:150px;background-color:white;">
+          <h2>Contextualised disease clusters</h2>
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a aria-selected="true" role="tab" data-toggle="tab" aria-controls="caliber_110" id="caliber_110-tab" class="nav-link active"  href="#caliber_110">Hypertension</a></li>
 
-          <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_101" id="caliber_101-tab" class="nav-link"  href="#caliber_101">Heart failure</a></li>
-          <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_57" id="caliber_57-tab" class="nav-link" href="#caliber_57">Coronary heart disease</a></li>
-          <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_132" id="caliber_132-tab" class="nav-link" href="#caliber_132">Ischaemic stroke</a></li>
-          <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_156" id="caliber_156-tab" class="nav-link" href="#caliber_156">Myocardial Infarction</a></li>
-          <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_290" id="caliber_290-tab" class="nav-link" href="#caliber_290">Diabetes</a></li>
-        </ul>
-    
-        <div class="tab-content">
+            <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_101" id="caliber_101-tab" class="nav-link"  href="#caliber_101">Heart failure</a></li>
+            <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_57" id="caliber_57-tab" class="nav-link" href="#caliber_57">Coronary heart disease</a></li>
+            <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_132" id="caliber_132-tab" class="nav-link" href="#caliber_132">Ischaemic stroke</a></li>
+            <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_156" id="caliber_156-tab" class="nav-link" href="#caliber_156">Myocardial Infarction</a></li>
+            <li class="nav-item"><a aria-selected="false" role="tab" data-toggle="tab" aria-controls="caliber_290" id="caliber_290-tab" class="nav-link" href="#caliber_290">Diabetes</a></li>
+          </ul>
           <label for="min_position">Disease count:&nbsp;</label><span id='min_position_value'></span><br>
           <input type="range" id="min_position" min="1" max="10" value="1" step="1">
+        </div>
+        <div class="tab-content" style="margin: 150px auto 0;">
           
             <div id="caliber_110" class="tab-pane fade show active" role="tabpanel" aria-labelledby="caliber_110-tab">
                 <h3>Year of birth distribution per cluster</h3>
